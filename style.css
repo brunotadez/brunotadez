@@ -1,42 +1,78 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #222;
-  line-height: 1.6;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #fdf6e3;
+  color: #333;
   margin: 0;
   padding: 0;
 }
 
-header, nav, main, footer {
+header {
+  background: linear-gradient(90deg, #ff6b6b, #feca57);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  color: white;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Cores para cada personagem */
+.bruno {
+  background: #1dd1a1;
+}
+
+.maria {
+  background: #48dbfb;
+}
+
+.prova {
+  background: #ff9ff3;
+}
+
+.resultado {
+  background: #feca57;
+  color: #222;
+}
+
+.moral {
+  background: #5f27cd;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 5px solid white;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
   padding: 1rem;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-a {
-  color: #0044cc;
-  text-decoration: none;
-}
-
-a:focus, a:hover {
-  outline: 2px solid #0044cc;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-input, textarea, button {
-  font-size: 1rem;
-  padding: 0.5rem;
-  max-width: 400px;
+  margin-top: 2rem;
 }
